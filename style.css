@@ -1,0 +1,11 @@
+body {
+    box-sizing: border-box;
+}
+
+.container {
+    display: flex;
+    height: 900px;
+    width: 900px;
+    border: 2px solid red;
+    margin: auto;
+}
