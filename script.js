@@ -4,9 +4,26 @@ const createSquareDivs = function (quantity) {
         childDiv.classList.add('childDiv');
         const parentDiv = document.querySelector('.container');
         parentDiv.appendChild(childDiv);
+        let ratioDiv = 100/quantity;
+        childDiv.style.height = ratioDiv + '%';
+        childDiv.style.width = ratioDiv + '%';
+
     }
    
 
 }
 
-createSquareDivs(5)
+const userDivs = function () {
+    const parentDiv = document.querySelector('.container');
+    let userNumber = parseInt(prompt("How many Divs would you like on each direction?"));
+    parentDiv.replaceChildren();
+    createSquareDivs(userNumber);
+}
+
+createSquareDivs(16);
+
+const btn = document.querySelector('.button');
+btn.addEventListener('click', userDivs);
+
+
+
