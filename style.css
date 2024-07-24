@@ -25,11 +25,11 @@
     margin-left: 8px
 }
 
-.childDiv {
+/* .childDiv {
     background-color: lightblue;
     transition: background-color 0.003s;
 }
 
 .childDiv:hover {
     background-color: lightcoral;
-}
+} */
