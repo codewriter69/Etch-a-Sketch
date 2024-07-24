@@ -16,8 +16,14 @@ const createSquareDivs = function (quantity) {
 const userDivs = function () {
     const parentDiv = document.querySelector('.container');
     let userNumber = parseInt(prompt("How many Divs would you like on each direction?"));
-    parentDiv.replaceChildren();
-    createSquareDivs(userNumber);
+    if (userNumber < 100) {
+        parentDiv.replaceChildren();
+        createSquareDivs(userNumber);
+    } else {
+        alert("Try Again")
+        userDivs();
+    }
+    
 }
 
 createSquareDivs(16);
