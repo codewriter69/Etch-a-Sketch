@@ -15,12 +15,21 @@
     align-items: center;
 }
 
-.childDiv {
+/* .childDiv {
     border: 1px solid red;
-}
+} */
 
 .button {
     display: flex;
     margin-top: 5px;
     margin-left: 8px
+}
+
+.childDiv {
+    background-color: lightblue;
+    transition: background-color 0.003s;
+}
+
+.childDiv:hover {
+    background-color: lightcoral;
 }
