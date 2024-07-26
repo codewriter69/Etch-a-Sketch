@@ -1,4 +1,5 @@
 # Etch-a-Sketch
+<<<<<<< HEAD
 
 A simple web application that creates a grid of `div` elements that change color on hover which acts as a sketch-board. Users can adjust the grid size or clear the colors of the grid.
 
