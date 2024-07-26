@@ -40,4 +40,8 @@ const btn = document.querySelector('.add');
 btn.addEventListener('click', userDivs);
 
 
-
+const clearBtn = document.querySelector(".clear");
+clearBtn.addEventListener("click", () => {
+    const parentDiv = document.querySelector(".container");
+    parentDiv.replaceChildren();
+})
