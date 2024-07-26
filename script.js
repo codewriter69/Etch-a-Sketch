@@ -1,3 +1,10 @@
+const getRandomColor = function () {
+    const r = Math.floor(Math.random() * 256);
+    const g = Math.floor(Math.random() * 256);
+    const b = Math.floor(Math.random() * 256);
+    return `rgb(${r}, ${g}, ${b})`;
+};
+
 const createSquareDivs = function (quantity) {
     for (let i = 0; i < (quantity * quantity); i++) {
         const childDiv = document.createElement('div');
@@ -29,16 +36,8 @@ const userDivs = function () {
 
 createSquareDivs(16);
 
-const btn = document.querySelector('.button');
+const btn = document.querySelector('.add');
 btn.addEventListener('click', userDivs);
-
-const getRandomColor = function () {
-    const r = Math.floor(Math.random() * 256);
-    const g = Math.floor(Math.random() * 256);
-    const b = Math.floor(Math.random() * 256);
-    return `rgb(${r}, ${g}, ${b})`;
-};
-
 
 
 

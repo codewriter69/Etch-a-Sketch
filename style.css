@@ -2,34 +2,38 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+    position: relative;
 }
 
 .container {
     display: flex;
-    height: 900px;
-    width: 900px;
+    height: 800px;
+    width: 800px;
     border: 1px solid red;
     margin: auto;
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
+    position: absolute;
+    top: 150px;
+    right: 50%;
+    left: 50%;
+    translate: -50%; 
 }
 
 /* .childDiv {
     border: 1px solid red;
 } */
 
-.button {
-    display: flex;
-    margin-top: 5px;
-    margin-left: 8px
+.add {
+    position: absolute;
+    top: 90px;
+    left: 40%;
+    transform: translate(-50%, -50%);
+    padding: 10px 20px;
+    cursor: pointer;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
 }
-
-/* .childDiv {
-    background-color: lightblue;
-    transition: background-color 0.003s;
-}
-
-.childDiv:hover {
-    background-color: lightcoral;
-} */
