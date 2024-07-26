@@ -36,12 +36,16 @@ const userDivs = function () {
 
 createSquareDivs(16);
 
-const btn = document.querySelector('.add');
-btn.addEventListener('click', userDivs);
+const addBtn = document.querySelector('.add');
+addBtn.addEventListener('click', userDivs);
 
 
 const clearBtn = document.querySelector(".clear");
 clearBtn.addEventListener("click", () => {
     const parentDiv = document.querySelector(".container");
-    parentDiv.replaceChildren();
+    const   childDivs = parentDiv.querySelectorAll(".childDiv");
+    childDivs.forEach(div => {
+        div.style.backgroundColor = "white";
+    });
+    console.log(childDivs)
 })
